@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios HTML, CSS y JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicios HTML, CSS y JavaScript</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarSeccion(event, 'ejercicio1')">1: Filtro de Arreglos</a></li>
+            <li><a href="#" onclick="mostrarSeccion(event, 'ejercicio2')">2: Transformar y Filtrar Arreglos</a></li>
+            <li><a href="#" onclick="mostrarSeccion(event, 'ejercicio3')">3: Promesas y Asincronía</a></li>
+            <li><a href="#" onclick="mostrarSeccion(event, 'ejercicio4')">4: Manipulación Compleja del DOM</a></li>
+            <li><a href="#" onclick="mostrarSeccion(event, 'ejercicio5')">5: Algoritmos/estructuras de Datos</a></li>
+        </ul>
+    </nav>
+    <section id="ejercicio1" class="seccion">
+        <h2>Ejercicio 1: Filtro de Arreglos</h2>
+        <p>Ingresa una lista de personas con nombre y edad:</p>
+        <textarea id="personasInput" rows="5" cols="30">[{"nombre":"Ana","edad":17},{"nombre":"Luis","edad":19},{"nombre":"Juan","edad":21}]</textarea>
+        <button onclick="ejecutarEjercicio1()">Filtrar Mayores de Edad</button>
+        <pre id="resultado1"></pre>
+    </section>
+    <section id="ejercicio2" class="seccion">
+        <h2>Ejercicio 2: Transformar y Filtrar Arreglos</h2>
+        <p>Ingresa una lista de números:</p>
+        <textarea id="numerosInput" rows="5" cols="30">[2, 3, 4, 5]</textarea>
+        <button onclick="ejecutarEjercicio2()">Transformar y Filtrar</button>
+        <pre id="resultado2"></pre>
+    </section>
+    <section id="ejercicio3" class="seccion">
+        <h2>Ejercicio 3: Promesas y Asincronía</h2>
+        <button onclick="ejecutarEjercicio3()">Obtener Usuarios</button>
+        <pre id="resultado3"></pre>
+    </section>
+    <section id="ejercicio4" class="seccion">
+        <h2>Ejercicio 4: Manipulación Compleja del DOM</h2>
+        <ul id="lista"></ul>
+        <button onclick="agregarItem()">Agregar ítem</button>
+    </section>
+    <section id="ejercicio5" class="seccion">
+        <h2>Ejercicio 5: Algoritmos y Estructuras de Datos</h2>
+        <p>Ingresa un arreglo de objetos con nombre y edad:</p>
+        <textarea id="objetosInput" rows="5" cols="30">[{"nombre":"Ana","edad":17},{"nombre":"Luis","edad":19},{"nombre":"Juan","edad":21}]</textarea>
+        <p>Propiedad para ordenar:</p>
+        <input type="text" id="propiedadInput" value="edad">
+        <button onclick="ejecutarEjercicio5()">Ordenar</button>
+        <pre id="resultado5"></pre>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
